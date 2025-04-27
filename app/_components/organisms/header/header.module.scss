@@ -1,0 +1,4 @@
+// @use '../../../_assets/css/style.scss' as *;
+
+.headersec{display: flex; flex-flow: row wrap; gap: 30px; justify-content: space-between; align-items: center;}
+// .headerright ul{@include d-flex(20px, column wrap);}
