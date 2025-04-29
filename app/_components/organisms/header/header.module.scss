@@ -1,4 +1,6 @@
-// @use '../../../_assets/css/style.scss' as *;
-
-.headersec{display: flex; flex-flow: row wrap; gap: 30px; justify-content: space-between; align-items: center;}
-// .headerright ul{@include d-flex(20px, column wrap);}
+.siteheader{ padding: 15px 0; background: $color-black;}
+.headersec{@include d-flex(20px, row, wrap); justify-content: space-between; align-items: center;}
+.logo a{@include text-style(40px, $color-white, 700, 1.5); display: inline-block; font-family: $secondary-font;}
+.logo a span{color: $color-yellow;}
+.headerright ul{ @include d-flex(40px, row, wrap); }
+.headerright ul li a{@include text-style(16px, $color-white, 400, 24px); display: inline-block; letter-spacing: 0.5px;}

@@ -1,4 +1,4 @@
-import "../_assets/css/style.scss";
+import "../_assets/css/globals.scss";
 import { Header } from "../_components/organisms/header/Header";
 import { Footer } from "../_components/organisms/footer/Footer";
 
@@ -12,7 +12,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Header />
+        <main>
           {children}
+        </main>
         <Footer />
       </body>
     </html>

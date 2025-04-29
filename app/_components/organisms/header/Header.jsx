@@ -5,13 +5,13 @@ import { Container } from "../container/Container";
 
 export const Header = () => {
     return (
-        <header>
-            <Container>
+        <header className={styles.siteheader}>
+            <Container container="lg-">
                 <div className={styles.headersec}>
-                    <div className="logo">
-                        <Link href="/">Kamlesh.Dev</Link>
+                    <div className={styles.logo}>
+                        <Link href="/"><span>K</span>amlesh.Dev</Link>
                     </div>
-                    <div className="headerright">
+                    <div className={styles.headerright}>
                         <ul className="unset">
                             <li>
                                 <Link href="/">Home</Link>

@@ -1,0 +1,12 @@
+@mixin d-flex($gap, $direction, $wrap) {
+  display: flex;
+  gap: $gap;
+  flex-flow: $direction $wrap;
+}
+
+@mixin text-style($size, $color, $weight, $lineHeight) {
+  font-size: $size;
+  color: $color;
+  font-weight: $weight;
+  line-height: $lineHeight;
+}
