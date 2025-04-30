@@ -7,6 +7,7 @@ import styles from './header.module.scss';
 import { MobileIcon } from "../../atoms/icons/Icons";
 import { Container } from "../container/Container";
 import { routes } from "@/app/utils/router";
+import { Banner } from "../banner/Banner";
 
 export const Header = () => {
 
@@ -21,30 +22,33 @@ export const Header = () => {
     ]
 
     return (
-        <header className={styles.siteheader}>
-            <Container container="fluid-">
-                <div className={styles.headersec}>
-                    <div className={styles.logo}>
-                        <Link href="/"><span>K</span>amlesh.Dev</Link>
-                    </div>
-                    <div className={styles.headerright}>
-                        <ul className="unset">
-                            {
-                                navItems.map(({href, label}) => {
-                                    return(
-                                        <li key={href}>
-                                            <Link href={href} className={pathname === href ? styles.active : ''}>{label}</Link>
-                                        </li>
-                                    )
-                                })  
-                            }
-                        </ul>
-                        <div className={styles.callbtn}>
-                            <Link href="tel:9168737879"><MobileIcon></MobileIcon>+91 9168737879</Link>
+        <>
+            <header className={styles.siteheader}>
+                <Container container="fluid-">
+                    <div className={styles.headersec}>
+                        <div className={styles.logo}>
+                            <Link href="/"><span>K</span>amlesh.Dev</Link>
+                        </div>
+                        <div className={styles.headerright}>
+                            <ul className="unset">
+                                {
+                                    navItems.map(({href, label}) => {
+                                        return(
+                                            <li key={href}>
+                                                <Link href={href} className={pathname === href ? styles.active : ''}>{label}</Link>
+                                            </li>
+                                        )
+                                    })  
+                                }
+                            </ul>
+                            <div className={styles.callbtn}>
+                                <Link href="tel:9168737879"><MobileIcon></MobileIcon>+91 9168737879</Link>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </Container>
-        </header>
+                </Container>
+            </header>
+            <Banner />
+        </>
     )
 }

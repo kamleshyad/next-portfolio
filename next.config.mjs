@@ -4,9 +4,9 @@ const nextConfig = {
   sassOptions: {
     includePaths: [path.join('app/_assets/css')],
     additionalData: `
-      @use 'variables';
-      @use 'mixins';
-      @use 'fontfaces';
+      @use 'variables' as *;
+      @use 'mixins' as *;
+      @use 'fontfaces' as *;
     `,
   },
 };
