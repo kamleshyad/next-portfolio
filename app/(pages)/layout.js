@@ -1,6 +1,7 @@
 import "../_assets/css/globals.scss";
 import { Header } from "../_components/organisms/header/Header";
 import { Footer } from "../_components/organisms/footer/Footer";
+import { Copyright } from "../_components/organisms/copyright/Copyright";
 
 export const metadata = {
   title: "Portfolio",
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
           {children}
         </main>
         <Footer />
+        <Copyright />
       </body>
     </html>
   );

@@ -1,7 +1,8 @@
 * {box-sizing: border-box; padding: 0; margin: 0; }
 body{font-family: $primary-font; font-size: 18px; line-height: normal; font-weight: 400;}
 
+.fluid-container{width: min(1920px, 96%); margin: 0 auto;}
 .container{width: min(1290px, 96%); margin: 0 auto;}
-.lg-container{width: min(1140px, 96%); margin: 0 auto;}
+.lg-container{width: min(1180px, 96%); margin: 0 auto;}
 a{text-decoration: none;}
 .unset{margin: 0; padding: 0; list-style: none;}

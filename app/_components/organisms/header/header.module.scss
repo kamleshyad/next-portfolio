@@ -1,6 +1,6 @@
 .siteheader{ padding: 15px 0; background: $color-black;}
 .headersec{@include d-flex(20px, row, wrap); justify-content: space-between; align-items: center;}
-.logo a{@include text-style(40px, $color-white, 400, 50px); display: inline-block; font-family: $secondary-font; position: relative; padding-left: 40px;
+.logo a{@include text-style(36px, $color-white, 400, 44px); display: inline-block; font-family: $secondary-font; position: relative; padding-left: 40px;
     span{color: $color-yellow;}
     &::before{content: ''; position: absolute; top: calc(50% - 29px); left: 0; background: url('/images/logo-icon.png') no-repeat center; background-size: 100%; width: 34px; height: 58px;}
 }

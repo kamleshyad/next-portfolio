@@ -22,7 +22,7 @@ export const Header = () => {
 
     return (
         <header className={styles.siteheader}>
-            <Container container="lg-">
+            <Container container="fluid-">
                 <div className={styles.headersec}>
                     <div className={styles.logo}>
                         <Link href="/"><span>K</span>amlesh.Dev</Link>

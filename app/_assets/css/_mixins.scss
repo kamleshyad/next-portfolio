@@ -10,3 +10,7 @@
   font-weight: $weight;
   line-height: $lineHeight;
 }
+
+@mixin border-top($width, $style, $color) {
+  border-top: $width $style $color;
+}
