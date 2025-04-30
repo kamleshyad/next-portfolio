@@ -3,10 +3,10 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+import { routes } from "@/app/utils/router";
 import styles from './header.module.scss';
 import { MobileIcon } from "../../atoms/icons/Icons";
 import { Container } from "../container/Container";
-import { routes } from "@/app/utils/router";
 import { Banner } from "../banner/Banner";
 
 export const Header = () => {
@@ -27,7 +27,7 @@ export const Header = () => {
                 <Container container="fluid-">
                     <div className={styles.headersec}>
                         <div className={styles.logo}>
-                            <Link href="/"><span>K</span>amlesh.Dev</Link>
+                            <Link href="/" scroll={false}><span>K</span>amlesh.Dev</Link>
                         </div>
                         <div className={styles.headerright}>
                             <ul className="unset">
@@ -35,7 +35,7 @@ export const Header = () => {
                                     navItems.map(({href, label}) => {
                                         return(
                                             <li key={href}>
-                                                <Link href={href} className={pathname === href ? styles.active : ''}>{label}</Link>
+                                                <Link href={href} scroll={false} className={pathname === href ? styles.active : ''}>{label}</Link>
                                             </li>
                                         )
                                     })  
