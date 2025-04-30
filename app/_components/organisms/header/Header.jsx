@@ -1,9 +1,25 @@
+'use client';
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import styles from './header.module.scss';
+import { MobileIcon } from "../../atoms/icons/Icons";
 import { Container } from "../container/Container";
+import { routes } from "@/app/utils/router";
 
 export const Header = () => {
+
+    const pathname = usePathname();
+
+    const navItems = [
+        {href: routes.home, label: 'Home' },
+        {href: routes.about, label: 'About'},
+        {href: routes.skills, label: 'Skills'},
+        {href: routes.projects, label: 'Projects'},
+        {href: routes.contact, label: 'Contact'},
+    ]
+
     return (
         <header className={styles.siteheader}>
             <Container container="lg-">
@@ -13,22 +29,19 @@ export const Header = () => {
                     </div>
                     <div className={styles.headerright}>
                         <ul className="unset">
-                            <li>
-                                <Link href="/">Home</Link>
-                            </li>
-                            <li>
-                                <Link href="/about">About</Link>
-                            </li>
-                            <li>
-                                <Link href="/skills">Skills</Link>
-                            </li>
-                            <li>
-                                <Link href="/projects">Projects</Link>
-                            </li>
-                            <li>
-                                <Link href="/contact">Contact</Link>
-                            </li>
+                            {
+                                navItems.map(({href, label}) => {
+                                    return(
+                                        <li key={href}>
+                                            <Link href={href} className={pathname === href ? styles.active : ''}>{label}</Link>
+                                        </li>
+                                    )
+                                })  
+                            }
                         </ul>
+                        <div className={styles.callbtn}>
+                            <Link href="tel:9168737879"><MobileIcon></MobileIcon>+91 9168737879</Link>
+                        </div>
                     </div>
                 </div>
             </Container>

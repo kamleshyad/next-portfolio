@@ -1,6 +1,16 @@
 .siteheader{ padding: 15px 0; background: $color-black;}
 .headersec{@include d-flex(20px, row, wrap); justify-content: space-between; align-items: center;}
-.logo a{@include text-style(40px, $color-white, 700, 1.5); display: inline-block; font-family: $secondary-font;}
-.logo a span{color: $color-yellow;}
-.headerright ul{ @include d-flex(40px, row, wrap); }
-.headerright ul li a{@include text-style(16px, $color-white, 400, 24px); display: inline-block; letter-spacing: 0.5px;}
+.logo a{@include text-style(40px, $color-white, 400, 50px); display: inline-block; font-family: $secondary-font; position: relative; padding-left: 40px;
+    span{color: $color-yellow;}
+    &::before{content: ''; position: absolute; top: calc(50% - 29px); left: 0; background: url('/images/logo-icon.png') no-repeat center; background-size: 100%; width: 34px; height: 58px;}
+}
+.headerright{@include d-flex(60px, row, wrap);}
+.headerright ul{ @include d-flex(30px, row, wrap); align-items: center;}
+.headerright ul li a{@include text-style(16px, $color-white, 400, 24px); display: inline-block; letter-spacing: 0.5px;
+    &:hover{color: $color-yellow;}
+    &.active{color: $color-yellow;}
+}
+.headerright .callbtn a{padding: 8px 10px; border-radius: 6px; background: $color-yellow; @include text-style(16px, $color-black, 400, normal); @include d-flex(5px, row, wrap); align-items: center; transition: all 0.3s linear;
+    &:hover{background: $color-white;}
+    svg{font-size: 20px;}
+}
