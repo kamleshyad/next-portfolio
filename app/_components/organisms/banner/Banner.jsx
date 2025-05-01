@@ -7,7 +7,7 @@ import bannerImg from '../../../../public/images/bannerimg.png'
 
 export const Banner = () => {
     return (
-        <div className={styles.bannersec}>
+        <section className={styles.bannersec}>
             <Container container="lg-">
                 <div className={styles.bnrwrap}>
                     <div className={styles.bnrleftsec}>
@@ -19,6 +19,6 @@ export const Banner = () => {
                     </div>
                 </div>
             </Container>
-        </div>
+        </section>
     )
 }

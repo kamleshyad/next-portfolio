@@ -2,16 +2,18 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
-import { routes } from "@/app/utils/router";
 import styles from './header.module.scss';
+
+import { routes } from "@/app/utils/routes";
 import { MobileIcon } from "../../atoms/icons/Icons";
 import { Container } from "../container/Container";
 import { Banner } from "../banner/Banner";
+import { Innerbanner } from "../innerbanner/Innerbanner";
 
 export const Header = () => {
 
     const pathname = usePathname();
+
 
     const navItems = [
         {href: routes.home, label: 'Home' },
@@ -20,6 +22,9 @@ export const Header = () => {
         {href: routes.projects, label: 'Projects'},
         {href: routes.contact, label: 'Contact'},
     ]
+
+    const currentPage = navItems.find(item => item.href === pathname );
+    const pageTitle = currentPage?.label;
 
     return (
         <>
@@ -48,7 +53,10 @@ export const Header = () => {
                     </div>
                 </Container>
             </header>
-            <Banner />
+            
+            {
+                (pathname === routes.home) ? <Banner /> : <Innerbanner pageTitle={pageTitle}/>
+            }
         </>
     )
 }
