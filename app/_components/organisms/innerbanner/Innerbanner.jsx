@@ -6,7 +6,7 @@ export const Innerbanner = ({pageTitle = ''}) => {
         <section className={styles.innerbnrsec}>
             <Container container="lg-">
                 <div className="innerbnrwrap">
-                    <h1>{pageTitle} Test</h1>
+                    <h1>{pageTitle}</h1>
                 </div>
             </Container>
         </section>
