@@ -47,7 +47,7 @@ export const Header = () => {
                                 }
                             </ul>
                             <div className={styles.callbtn}>
-                                <Link href="tel:9168737879"><MobileIcon></MobileIcon>+91 9168737877</Link>
+                                <Link href="tel:9168737879"><MobileIcon></MobileIcon>+91 9168737879</Link>
                             </div>
                         </div>
                     </div>
