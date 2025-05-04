@@ -4,7 +4,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from './header.module.scss';
 
-import { routes } from "@/app/utils/routes";
 import { MobileIcon } from "../../atoms/icons/Icons";
 import { Container } from "../container/Container";
 import { Banner } from "../banner/Banner";
@@ -14,16 +13,16 @@ export const Header = () => {
 
     const pathname = usePathname();
 
-
     const navItems = [
-        {href: routes.home, label: 'Home' },
-        {href: routes.about, label: 'About'},
-        {href: routes.skills, label: 'Skills'},
-        {href: routes.projects, label: 'Projects'},
-        {href: routes.contact, label: 'Contact'},
+        {href: '/', label: 'Home' },
+        {href: '/about', label: 'About'},
+        {href: '/skills', label: 'Skills'},
+        {href: '/projects', label: 'Projects'},
+        {href: '/contact', label: 'Contact'},
     ]
 
     const currentPage = navItems.find(item => item.href === pathname );
+    console.log(currentPage)
     const pageTitle = currentPage?.label;
 
     return (
