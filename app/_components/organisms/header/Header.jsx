@@ -22,7 +22,6 @@ export const Header = () => {
     ]
 
     const currentPage = navItems.find(item => item.href === pathname );
-    console.log(currentPage)
     const pageTitle = currentPage?.label;
 
     return (
@@ -54,7 +53,7 @@ export const Header = () => {
             </header>
             
             {
-                (pathname === routes.home) ? <Banner /> : <Innerbanner pageTitle={pageTitle}/>
+                (pathname === '/') ? <Banner /> : <Innerbanner pageTitle={pageTitle}/>
             }
         </>
     )
