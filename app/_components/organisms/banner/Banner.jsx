@@ -7,15 +7,15 @@ import bannerImg from '../../../../public/images/bannerimg.png'
 
 export const Banner = () => {
     return (
-        <section className={styles.bannersec}>
+        <section className={styles.bannersec} aria-labelledby='bannertitle'>
             <Container container="lg-">
                 <div className={styles.bnrwrap}>
                     <div className={styles.bnrleftsec}>
-                        <h1>I'm Kamlesh Yadav <span>Frontend Developer</span></h1>
+                        <h1 id='bannertitle'>I'm Kamlesh Yadav <span>Frontend Developer</span></h1>
                         <h2>Next Js</h2>
                     </div>
                     <div className={styles.bnrrightsec}>
-                        <Image src={bannerImg} alt='banner img'/>
+                        <Image src={bannerImg} alt='Kamlesh Yadav — Frontend Developer portrait image'/>
                     </div>
                 </div>
             </Container>

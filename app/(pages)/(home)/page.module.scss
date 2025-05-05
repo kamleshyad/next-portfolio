@@ -1,0 +1,7 @@
+.aboutsec{padding: 80px 0; background: $color-black;
+    .titlesec{@include titlesec();
+        h2{@include maintitle()}
+        h3{@include title()}
+    }
+
+}

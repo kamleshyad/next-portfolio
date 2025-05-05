@@ -1,4 +1,4 @@
-.bannersec{padding: 120px 0; background: url('/images/hero-bg.jpg') no-repeat top center; background-size: cover;
+.bannersec{padding: 120px 0 80px; background: url('/images/hero-bg.jpg') no-repeat top center; background-size: cover;
     .bnrwrap{
         @include d-flex(30px, row, wrap); font-size: 0; justify-content: space-between;
             .bnrleftsec { width: 48%;

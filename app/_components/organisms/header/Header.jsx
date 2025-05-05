@@ -33,17 +33,19 @@ export const Header = () => {
                             <Link href="/" scroll={false}><span>K</span>amlesh.Dev</Link>
                         </div>
                         <div className={styles.headerright}>
-                            <ul className="unset">
-                                {
-                                    navItems.map(({href, label}) => {
-                                        return(
-                                            <li key={href}>
-                                                <Link href={href} scroll={false} className={pathname === href ? styles.active : ''}>{label}</Link>
-                                            </li>
-                                        )
-                                    })  
-                                }
-                            </ul>
+                            <nav>
+                                <ul className="unset">
+                                    {
+                                        navItems.map(({href, label}) => {
+                                            return(
+                                                <li key={href}>
+                                                    <Link href={href} scroll={false} className={pathname === href ? styles.active : ''}>{label}</Link>
+                                                </li>
+                                            )
+                                        })  
+                                    }
+                                </ul>
+                            </nav>
                             <div className={styles.callbtn}>
                                 <Link href="tel:9168737879"><MobileIcon></MobileIcon>+91 9168737879</Link>
                             </div>
