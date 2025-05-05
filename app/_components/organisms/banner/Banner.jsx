@@ -7,11 +7,11 @@ import bannerImg from '../../../../public/images/bannerimg.png'
 
 export const Banner = () => {
     return (
-        <section className={styles.bannersec} aria-labelledby='bannertitle'>
+        <section className={styles.bannersec} aria-labelledby='banner-title'>
             <Container container="lg-">
                 <div className={styles.bnrwrap}>
                     <div className={styles.bnrleftsec}>
-                        <h1 id='bannertitle'>I'm Kamlesh Yadav <span>Frontend Developer</span></h1>
+                        <h1 id='banner-title'>I'm Kamlesh Yadav <span>Frontend Developer</span></h1>
                         <h2>Next Js</h2>
                     </div>
                     <div className={styles.bnrrightsec}>

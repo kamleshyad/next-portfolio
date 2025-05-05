@@ -1,7 +1,11 @@
 .aboutsec{padding: 80px 0; background: $color-black;
     .titlesec{@include titlesec();
         h2{@include maintitle()}
-        h3{@include title()}
+        p{@include title()}
     }
-
+    .aboutbox{width: min(1100px, 100%); margin: 70px auto 0; padding: 50px 30px; background: #2a2f3d; border: 1px solid $color-white; border-radius: 8px;
+        h3{@include text-style(36px, $color-white, 400, 40px); margin-bottom: 20px;}
+        h4{@include text-style(26px, $color-yellow, 400, 32px); margin-bottom: 20px;}
+        p{@include text-style(18px, $color-grey, 400, 28px);}
+    }
 }
