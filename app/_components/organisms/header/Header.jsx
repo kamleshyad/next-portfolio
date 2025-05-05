@@ -8,6 +8,7 @@ import { MobileIcon } from "../../atoms/icons/Icons";
 import { Container } from "../container/Container";
 import { Banner } from "../banner/Banner";
 import { Innerbanner } from "../innerbanner/Innerbanner";
+import { Nav } from "../nav/Nav";
 
 export const Header = () => {
 
@@ -22,7 +23,7 @@ export const Header = () => {
     ]
 
     const currentPage = navItems.find(item => item.href === pathname );
-    const pageTitle = currentPage?.label;
+    const pageTitle = currentPage?.label || '404 page';
 
     return (
         <>
@@ -33,19 +34,7 @@ export const Header = () => {
                             <Link href="/" scroll={false}><span>K</span>amlesh.Dev</Link>
                         </div>
                         <div className={styles.headerright}>
-                            <nav>
-                                <ul className="unset">
-                                    {
-                                        navItems.map(({href, label}) => {
-                                            return(
-                                                <li key={href}>
-                                                    <Link href={href} scroll={false} className={pathname === href ? styles.active : ''}>{label}</Link>
-                                                </li>
-                                            )
-                                        })  
-                                    }
-                                </ul>
-                            </nav>
+                            <Nav />
                             <div className={styles.callbtn}>
                                 <Link href="tel:9168737879"><MobileIcon></MobileIcon>+91 9168737879</Link>
                             </div>

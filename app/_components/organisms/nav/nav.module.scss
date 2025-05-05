@@ -1,0 +1,5 @@
+.nav ul{ @include d-flex(35px, row, wrap); align-items: center;}
+.nav ul li a{@include text-style(16px, $color-white, 400, 24px); display: inline-block; letter-spacing: 0.5px;
+    &:hover{color: $color-yellow;}
+    &.active{color: $color-yellow;}
+}
