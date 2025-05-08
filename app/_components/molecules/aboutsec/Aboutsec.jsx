@@ -12,8 +12,7 @@ export const Aboutsec = () => {
                 </div>
             </div>
             <div className={styles.aboutrightsec}>
-                <h3>Hi There! I'm Kamlesh Yadav</h3>
-                <h4>Frontend Developer</h4>
+                <h4>Hi there! I'm Kamlesh Yadav</h4>
                 <p>Front-end developer with 3.6 of experience in creating dynamic, responsive, and user-focused web applications using HTML5, CSS3, JavaScript, Wordpress, React and Next.js. Skilled in integrating APIs, optimizing for SEO, and enhancing performance to improve user engagement. Dedicated to delivering clean, scalable code and staying updated with the latest industry trends.</p>
             </div>
         </article>

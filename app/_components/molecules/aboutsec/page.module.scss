@@ -1,13 +1,16 @@
-.aboutwrap{@include d-flex(50px, row, wrap); font-size: 0; align-items: center;
-    .yearsec{width: 38%; @include d-flex(20px, row, wrap);
+.aboutwrap{@include d-flex(50px, row, wrap); font-size: 0; align-items: center; background: $color-black;
+    .yearsec{width: 40%; @include d-flex(20px, row, wrap);
         .yearwrap{width: 180px; text-align: center;
             h3{@include text-style(80px, $color-yellow, 700, 60px); }
             span{display: inherit; @include text-style(48px, $color-grey, 400, 35px); letter-spacing: 14px; margin-top: 20px; font-family: $secondary-font;}
         }
         .profilesec{width: calc(100% - 200px); text-align: center; align-self: center;
-            p{@include text-style(18px, $color-white, 400, 30px); letter-spacing: 1px;}
-            span{display: block; color: $color-yellow;}
+            p{@include text-style(22px, $color-white, 400, 30px);}
+            span{display: block; color: $color-yellow; font-weight: 500; margin-top: 5px;}
         }
     }
-    .aboutrightsec{width: 57%; font-size: 18px;}
+    .aboutrightsec{width: 55%; padding: 40px 30px; background: #2a2f3d; border-radius: 8px;
+        h4{@include text-style(30px, $color-yellow, 400, 32px); margin-bottom: 30px;}
+        p{@include text-style(18px, $color-grey, 400, 30px);}
+    }
 }
