@@ -1,15 +1,13 @@
 import styles from './page.module.scss';
 
 import { Container } from "@/app/_components/organisms/container/Container";
+import { Sectionhead } from '@/app/_components/molecules/sectionhead/Sectionhead';
 
 const Home = () => {
     return(
-        <section className={styles.aboutsec} aria-labelledby='about-title'>
+        <section className={styles.aboutsec} aria-labelledby='about-me'>
             <Container container="lg-">
-                <div className={styles.titlesec}>
-                    <h2 id="about-title">About Me</h2>
-                    <p>About Me</p>
-                </div>
+                <Sectionhead title="About Me" id="about-me"/>
                 <article className={styles.aboutbox}>
                     <h3>Hi There! I'm Kamlesh Yadav</h3>
                     <h4>Frontend Developer</h4>

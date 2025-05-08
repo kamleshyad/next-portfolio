@@ -1,4 +1,4 @@
-.siteheader{ padding: 15px 0; background: $color-black;}
+.siteheader{ padding: 15px 0; background: $color-black; position: sticky; top: 0; width: 100%; box-shadow: 0px 0px 3px rgb(254 197 68); z-index: 10;}
 .headersec{@include d-flex(20px, row, wrap); justify-content: space-between; align-items: center;}
 .logo a{@include text-style(36px, $color-white, 400, 44px); display: inline-block; font-family: $secondary-font; position: relative; padding-left: 45px;
     span{color: $color-yellow;}
