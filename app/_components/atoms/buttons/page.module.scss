@@ -1,0 +1,4 @@
+a.primarylink, button.primarylink{padding: 8px 10px; border-radius: 6px; background: $color-yellow; @include text-style(16px, $color-black, 400, normal); @include d-flex(5px, row, wrap); align-items: center; transition: all 0.3s linear;
+    &:hover{background: $color-white;}
+    svg{font-size: 20px;}
+}

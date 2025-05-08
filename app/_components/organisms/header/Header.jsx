@@ -8,7 +8,8 @@ import { MobileIcon } from "../../atoms/icons/Icons";
 import { Container } from "../container/Container";
 import { Banner } from "../banner/Banner";
 import { Innerbanner } from "../innerbanner/Innerbanner";
-import { Nav } from "../nav/Nav";
+import { Nav } from "../../molecules/nav/Nav";
+import { PrimaryLink } from "../../atoms/buttons/Button";
 
 export const Header = () => {
 
@@ -35,14 +36,13 @@ export const Header = () => {
                         </div>
                         <div className={styles.headerright}>
                             <Nav />
-                            <div className={styles.callbtn}>
-                                <Link href="tel:9168737879"><MobileIcon></MobileIcon>+91 9168737879</Link>
+                            <div className="headerbtnsec">
+                                <PrimaryLink href="tel:9168737879" arialabel="call button 9168737879"><MobileIcon />+91 9168737879</PrimaryLink>
                             </div>
                         </div>
                     </div>
                 </Container>
             </header>
-            
             {
                 (pathname === '/') ? <Banner /> : <Innerbanner pageTitle={pageTitle}/>
             }
