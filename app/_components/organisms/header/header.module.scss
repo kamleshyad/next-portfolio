@@ -4,7 +4,7 @@
     span{color: $color-yellow;}
     &::before{content: ''; position: absolute; top: calc(50% - 24px); left: 0; background: url('/images/logo-icon.png') no-repeat center; background-size: 100%; width: 34px; height: 49px;}
 }
-.headerright{@include d-flex(60px, row, wrap);}
+.headerright{@include d-flex(60px, row, wrap); align-items: center;}
 
 .headerright .callbtn a{padding: 8px 10px; border-radius: 6px; background: $color-yellow; @include text-style(16px, $color-black, 400, normal); @include d-flex(5px, row, wrap); align-items: center; transition: all 0.3s linear;
     &:hover{background: $color-white;}
