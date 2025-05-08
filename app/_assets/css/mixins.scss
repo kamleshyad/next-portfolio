@@ -10,10 +10,3 @@
 
 @mixin absolute(){position: absolute;}
 
-// @mixin maintitle(){font-size: 90px; font-weight: 700; text-transform: uppercase; color: $color-grey; line-height: 70px; letter-spacing: 10px; text-align: center; position: relative; z-index: 1; opacity: 0.2; font-family: $secondary-font;}
-
-// @mixin title(){font-size: 24px; font-weight: 500; text-transform: uppercase; color: $color-yellow; line-height: normal; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -65%); z-index: 10; letter-spacing: 1px; text-align: center; font-family: $secondary-font;
-//   &::before{content: ''; position: absolute; bottom: -5px; left: 50%; transform: translateX(-50%); width: 180px; height: 2px; background: $color-grey;}
-//   &::after{content: ''; position: absolute; bottom: -5px; left: 50%; transform: translateX(-50%); width: 80px; height: 2px; background: $color-yellow;}
-// }
-

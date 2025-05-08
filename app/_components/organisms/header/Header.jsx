@@ -37,7 +37,7 @@ export const Header = () => {
                         <div className={styles.headerright}>
                             <Nav />
                             <div className="headerbtnsec">
-                                <PrimaryLink href="tel:9168737879" arialabel="call button 9168737879"><MobileIcon />+91 9168737879</PrimaryLink>
+                                <PrimaryLink href="tel:9168737879" aria-label="call button 9168737879"><MobileIcon />+91 9168737879</PrimaryLink>
                             </div>
                         </div>
                     </div>
