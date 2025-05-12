@@ -1,0 +1,11 @@
+breadcrumb and experience
+
+pathname.split("/")
+/blog/react-hooks
+
+pathname.split("/") // ["", "blog", "react-hooks"]
+
+.filter(Boolean)
+
+["", "blog", "react-hooks"].filter(Boolean) 
+// => ["blog", "react-hooks"]
