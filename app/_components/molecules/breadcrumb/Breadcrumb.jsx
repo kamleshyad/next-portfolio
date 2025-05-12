@@ -3,34 +3,49 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+import styles from './breadcrumb.module.scss';
+
 export const Breadcrumb = () => {
 
-    const pathname  = usePathname();
-    const pathSegments = pathname.split("/").filter(Boolean);
+    const pathName = usePathname();
+    const pathSegments = pathName.split('/').filter(Boolean);
 
-    const createBreadcrumbName = (segment) => {
-        return decodeURIComponent(segment)
-        .replace(/-/g, " ")
-        .replace(/\b\w/g, (l) => l.toUpperCase());
+    const buildHref = (index) => {
+        return '/' + pathSegments.slice(0, index + 1).join('/');
     };
 
+    const formatSegment = (segment) => {
+        const decoded = decodeURIComponent(segment).replace(/-/g, ' ');
+        return decoded.charAt(0).toUpperCase() + decoded.slice(1);
+    };
+    
     return (
-        <nav aria-label="breadcrumb" className="text-sm text-gray-500 space-x-2">
-        <Link href="/">Home</Link>
-        {pathSegments.map((segment, index) => {
-            const href = "/" + pathSegments.slice(0, index + 1).join("/");
-            const isLast = index === pathSegments.length - 1;
-            return (
-            <span key={href}>
-                {'\u203A'}
-                {isLast ? (
-                    <span>{createBreadcrumbName(segment)}</span>
-                ) : (
-                    <Link href={href}>{createBreadcrumbName(segment)}</Link>
-                )}
-            </span>
-            );
-        })}
-    </nav>
+        <div className={styles.breadcreumbsec}>
+            <nav aria-label="breadcrumb">
+                <ul className="unset">
+                    <li>
+                        <Link href="/">Home</Link>  
+                    </li>
+                    {pathSegments.map((segment, index) => {
+                        const isLast = index === pathSegments.length - 1;
+                        const href = buildHref(index);
+
+                        return (
+                            <li key={index}>
+                                {isLast ? (
+                                    <span>
+                                        {formatSegment(segment)}
+                                    </span>
+                                ) : (
+                                    <Link href={href}>
+                                        {formatSegment(segment)}
+                                    </Link>
+                                )}
+                            </li>
+                        );
+                    })}
+                </ul>
+            </nav>
+        </div>
     )
 }

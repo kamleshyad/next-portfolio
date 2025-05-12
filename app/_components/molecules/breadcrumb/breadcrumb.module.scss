@@ -1,0 +1,12 @@
+.breadcreumbsec{@include d-flex(0, row, wrap); justify-content: center; margin-bottom: 15px;
+    ul{@include d-flex(0, row, wrap);
+        li{@include text-style(15px, $color-yellow, 400, normal); position: relative;
+            &:not(:first-child){margin-left: 25px;
+                &::before{content: "\276F"; color: $color-grey; position: absolute; top: 0; left: -16px; font-size: 15px;
+                    }
+                }
+            a{color: $color-white; transition: all 0.3s linear; letter-spacing: 0.5px;
+            &:hover{color: $color-yellow;}}
+        }
+    }
+}
