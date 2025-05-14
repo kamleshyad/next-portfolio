@@ -8,7 +8,6 @@ const Home = () => {
     return(
         <section className={styles.aboutsec} aria-labelledby='about-me'>
             <Container container="lg-">
-                <Sectionhead title="About Me" id="about-me"/>
                 <Aboutsec />
             </Container>
         </section>
