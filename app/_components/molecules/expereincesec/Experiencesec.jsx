@@ -1,7 +1,7 @@
-
+import { Sectiontitle } from "../sectiontitle/Sectiontitle";
 
 export const Experiencesec = () => {
     return (
-        <div>Experiencesec</div>
+        <Sectiontitle title="Experience" id="experience"/>
     )
 }

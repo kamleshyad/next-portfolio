@@ -10,7 +10,7 @@
         }
     }
     .aboutrightsec{width: 55%; padding: 40px 30px; background: #2a2f3d; border-radius: 8px;
-        h4{@include text-style(30px, $color-yellow, 400, 32px); margin-bottom: 30px;}
-        p{@include text-style(18px, $color-grey, 400, 30px);}
+        h4{@include text-style(38px, $color-yellow, 500, 46px); margin-bottom: 20px; font-family: $secondary-font;}
+        p{@include text-style(17px, $color-grey, 400, 30px);}
     }
 }
