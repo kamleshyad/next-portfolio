@@ -12,7 +12,7 @@ const Home = () => {
                     <Aboutsec />
                 </Container>
             </section>
-            <section className={styles.aboutsec} aria-labelledby='experience'>
+            <section className={styles.experiencesec} aria-labelledby='experience'>
                 <Container container="lg-">
                     <Experiencesec />
                 </Container>

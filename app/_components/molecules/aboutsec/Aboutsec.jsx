@@ -6,13 +6,37 @@ export const Aboutsec = () => {
         <>
             <Sectiontitle title="About Me" id="about-me"/>
             <article className={styles.aboutwrap}>
-                <div className={styles.yearsec}>
-                    <div className={styles.yearwrap}>
-                        <h3>3.6 <span>Years</span></h3>
-                    </div>
-                    <div className={styles.profilesec}>
-                        <p>of working experience as a <span>"Frontend Developer"</span></p>
-                    </div>
+                <div className={styles.aboutlefttsec}>
+                    <ul className="reset">
+                        <li>
+                            <p className={styles.title}>Name</p>
+                            <p>Kamlesh S. Yadav</p>
+                        </li>
+                        <li>
+                            <p className={styles.title}>Work Profile</p>
+                            <p>Frontend Developer</p>
+                        </li>
+                        <li>
+                            <p className={styles.title}>Birthday</p>
+                            <p>February 19, 1995</p>
+                        </li>
+                        <li>
+                            <p className={styles.title}>Phone</p>
+                            <p>+91 9168737879</p>
+                        </li>
+                        <li>
+                            <p className={styles.title}>Email</p>
+                            <p>Kamleshyadav1795@gmail.com</p>
+                        </li>
+                        <li>
+                            <p className={styles.title}>Location</p>
+                            <p>Palghar, Maharashtra</p>
+                        </li>
+                        <li>
+                            <p className={styles.title}>Language</p>
+                            <p>English, Hindi, Marathi</p>
+                        </li>
+                    </ul>
                 </div>
                 <div className={styles.aboutrightsec}>
                     <h4>More about me</h4>
