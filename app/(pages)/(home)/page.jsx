@@ -4,6 +4,7 @@ import { Container } from "@/app/_components/organisms/container/Container";
 import { Sectiontitle } from '@/app/_components/molecules/sectiontitle/Sectiontitle';
 import { Aboutsec } from '@/app/_components/molecules/aboutsec/Aboutsec';
 import { Experiencesec } from '@/app/_components/molecules/expereincesec/Experiencesec';
+import { Skillsec } from '@/app/_components/molecules/skillsec/Skillsec';
 
 const Home = () => {
     return(
@@ -18,6 +19,12 @@ const Home = () => {
                 <Container container="lg-">
                     <Sectiontitle title="Experience" id="experience"/>
                     <Experiencesec />
+                </Container>
+            </section>
+            <section className={styles.experiencesec} aria-labelledby='skill'>
+                <Container container="lg-">
+                    <Sectiontitle title="Skills" id="skill"/>
+                    <Skillsec />
                 </Container>
             </section>
         </>
