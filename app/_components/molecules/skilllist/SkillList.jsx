@@ -21,7 +21,7 @@ export const SkillList = () => {
                     skillList.map((skill, index) => {
                         return(
                             <li key={index}>
-                                <div className="imgsec">
+                                <div className={styles.imgsec}>
                                     {skill.skillIcon}
                                 </div>
                             </li>

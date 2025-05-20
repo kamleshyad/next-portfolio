@@ -1,11 +1,10 @@
 .skillwrap{
-    ul{@include d-flex(0, row, wrap); font-size: 0;
-        li{padding: 15px;  width: 16.66%; box-sizing: border-box; @include d-flex(0, row, wrap); justify-content: center; align-items: center; border: 1px solid $color-grey; border-right: 0;
-            &:nth-child(6n) {
-                border-right: 1px solid $color-grey;
+    ul{@include d-flex(28px, row, wrap); font-size: 0;
+        li{width: 18%; 
+            .imgsec{padding: 15px; width: 100%; box-sizing: border-box; @include d-flex(0, row, wrap); justify-content: center; align-items: center; border: 1px solid $color-grey; transition: all 0.3s linear;
+                svg{width: 100px; height: 100px;}
+                &:hover{border-color: $color-yellow; box-shadow: 0px 0px 12px rgba(225,225,225, .2);} 
             }
-            svg{width: 100px; height: 100px;}
-            
         }
         
     }
