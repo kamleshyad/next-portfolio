@@ -1,29 +1,11 @@
 import styles from './skillsec.module.scss';
-import { HtmlIcon } from '../../atoms/icons/Icons';
+import { SkillList } from '../../molecules/skilllist/SkillList';
 
 export const Skillsec = () => {
+
     return (
         <div className={styles.skillsec}>
-            <ul className="unset">
-                <li>
-                    <HtmlIcon />
-                </li>
-                <li>
-                    <HtmlIcon />
-                </li>
-                <li>
-                    <HtmlIcon />
-                </li>
-                <li>
-                    <HtmlIcon />
-                </li>
-                <li>
-                    <HtmlIcon />
-                </li>
-                <li>
-                    <HtmlIcon />
-                </li>
-            </ul>
+            <SkillList />
         </div>
     )
 }
