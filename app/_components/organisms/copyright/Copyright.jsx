@@ -1,5 +1,5 @@
 import styles from './copyright.module.scss';
-import { Container } from '../container/Container';
+import { Container } from '../../template/container/Container';
 
 export const Copyright = () => {
     const date = new Date();

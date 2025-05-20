@@ -1,5 +1,5 @@
 import styles from './footer.module.scss';
-import { Container } from "../container/Container";
+import { Container } from "../../template/container/Container";
 
 export const Footer = () => {
     return (

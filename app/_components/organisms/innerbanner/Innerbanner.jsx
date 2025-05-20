@@ -1,6 +1,6 @@
 import styles from './innerbanner.module.scss';
 
-import { Container } from "../container/Container";
+import { Container } from "../../template/container/Container";
 import { Breadcrumb } from '../../molecules/breadcrumb/Breadcrumb';
 
 export const Innerbanner = ({pageTitle = ''}) => {

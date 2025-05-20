@@ -1,4 +1,4 @@
-import { Container } from "../../organisms/container/Container"
+import { Container } from "../container/Container"
 
 export const Fullwidth = ({children}) => {
     return (

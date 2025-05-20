@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import styles from './header.module.scss';
 
 import { MobileIcon } from "../../atoms/icons/Icons";
-import { Container } from "../container/Container";
+import { Container } from "../../template/container/Container";
 import { Banner } from "../banner/Banner";
 import { Innerbanner } from "../innerbanner/Innerbanner";
 import { Nav } from "../../molecules/nav/Nav";

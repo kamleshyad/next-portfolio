@@ -1,6 +1,6 @@
 import styles from './experiencesec.module.scss';
 
-import { Sectiontitle } from "../sectiontitle/Sectiontitle";
+import { Sectiontitle } from "../../../molecules/sectiontitle/Sectiontitle";
 
 export const Experiencesec = () => {
     return (

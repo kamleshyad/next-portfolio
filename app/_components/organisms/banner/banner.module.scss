@@ -1,11 +1,11 @@
-.bannersec{padding: 120px 0 80px; background: url('/images/hero-bg.jpg') no-repeat top center; background-size: cover; border-bottom: 1px solid #383838;
+.bannersec{padding: 120px 0 80px; background: url('/images/hero-bg.jpg') no-repeat top center; background-size: cover; border-bottom: 1px solid $color-grey;
     .bnrwrap{
         @include d-flex(30px, row, wrap); font-size: 0; justify-content: space-between;
             .bnrleftsec { width: 48%;
                 h1{@include text-style(60px, $color-white, 500, 60px); font-family: $secondary-font;
                 span{display: block; margin-top: 30px; color: $color-yellow;}
             }
-            h2{@include text-style(50px, $color-grey, 500, 60px); font-family: $secondary-font; margin-top: 25px;}
+            h2{@include text-style(50px, $color-lightgrey, 500, 60px); font-family: $secondary-font; margin-top: 25px;}
         }
         .bnrrightsec{width: 48%; display: flex; justify-content: center; align-items: center;}
     }

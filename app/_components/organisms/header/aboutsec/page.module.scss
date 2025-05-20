@@ -1,11 +1,11 @@
 .aboutwrap{@include d-flex(5%, row, wrap); font-size: 0; align-items: center; background: $color-black;
-    .aboutlefttsec{width: 40%; @include d-flex(20px, row, wrap); padding: 40px 30px; background: #2a2f3d; border-radius: 8px;
+    .aboutlefttsec{width: 40%; @include d-flex(20px, row, wrap); padding: 40px 30px; background: $color-grey; border-radius: 8px;
         ul{@include d-flex(10px, column, wrap); font-size: 0;
             li{@include d-flex(25px, row, wrap); align-items: center;
                 p.title{@include text-style(17px, $color-white, 400, 30px); width: 135px; font-family: $secondary-font; @include rel();
                 &::after{content: ':'; @include absolute(); right: 0; font-size: 20px; color: $color-yellow;}
                 }
-                p{@include text-style(17px, $color-grey, 400, 30px); width: calc(100% - 160px);}
+                p{@include text-style(17px, $color-lightgrey, 400, 30px); width: calc(100% - 160px);}
             }
         }
     }

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 import styles from './banner.module.scss';
-import { Container } from "../container/Container";
+import { Container } from "../../template/container/Container";
 
 import bannerImg from '../../../../public/images/bannerimg.png'
 

@@ -1,10 +1,10 @@
 import styles from './page.module.scss';
 
-import { Container } from "@/app/_components/organisms/container/Container";
+import { Container } from "@/app/_components/template/container/Container";
 import { Sectiontitle } from '@/app/_components/molecules/sectiontitle/Sectiontitle';
-import { Aboutsec } from '@/app/_components/molecules/aboutsec/Aboutsec';
-import { Experiencesec } from '@/app/_components/molecules/expereincesec/Experiencesec';
-import { Skillsec } from '@/app/_components/molecules/skillsec/Skillsec';
+import { Aboutsec } from '@/app/_components/organisms/header/aboutsec/Aboutsec';
+import { Experiencesec } from '@/app/_components/organisms/banner/expereincesec/Experiencesec';
+import { Skillsec } from '@/app/_components/organisms/skillsec/Skillsec';
 
 const Home = () => {
     return(

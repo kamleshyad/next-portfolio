@@ -1,5 +1,5 @@
-import { PrimaryLink } from '../../atoms/buttons/Button';
-import { Sectiontitle } from '../sectiontitle/Sectiontitle';
+import { PrimaryLink } from '../../../atoms/buttons/Button';
+import { Sectiontitle } from '../../../molecules/sectiontitle/Sectiontitle';
 import styles from './page.module.scss';
 
 export const Aboutsec = () => {

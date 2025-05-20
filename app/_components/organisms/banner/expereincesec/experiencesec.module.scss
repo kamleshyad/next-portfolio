@@ -2,7 +2,7 @@
     .yearsec{width: 40%; @include d-flex(20px, row, wrap);
         .yearwrap{width: 180px; text-align: center;
             h3{@include text-style(80px, $color-yellow, 700, 60px); }
-            span{display: inherit; @include text-style(48px, $color-grey, 400, 35px); letter-spacing: 14px; margin-top: 20px; font-family: $secondary-font;}
+            span{display: inherit; @include text-style(48px, $color-lightgrey, 400, 35px); letter-spacing: 14px; margin-top: 20px; font-family: $secondary-font;}
         }
         .profilesec{width: calc(100% - 200px); text-align: center; align-self: center;
             p{@include text-style(22px, $color-white, 400, 30px);}
