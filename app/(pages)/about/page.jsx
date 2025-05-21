@@ -1,7 +1,7 @@
 import styles from './page.module.scss';
 
 import { Container } from "@/app/_components/template/container/Container";
-import { Aboutsec } from "@/app/_components/organisms/header/aboutsec/Aboutsec";
+import { Aboutsec } from "@/app/_components/organisms/aboutsec/Aboutsec";
 
 export default function About() {
     return (
