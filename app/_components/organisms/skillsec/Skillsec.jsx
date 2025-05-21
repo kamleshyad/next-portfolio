@@ -5,8 +5,8 @@ import { HtmlIcon, CssIcon, SassIcon, TailwindIcon, BootstrapIcon, JavascriptIco
 export const Skillsec = () => {
 
     const skillList = [
-        {skillName: "Html", skillIcon: <HtmlIcon />, glowColor: "#ff5c13"},
-        {skillName: "Css", skillIcon: <CssIcon />, glowColor: "#0277bd"},
+        {skillName: "Html5", skillIcon: <HtmlIcon />, glowColor: "#ff5c13"},
+        {skillName: "Css3", skillIcon: <CssIcon />, glowColor: "#0277bd"},
         {skillName: "Sass", skillIcon: <SassIcon />, glowColor: "#f06292"},
         {skillName: "Tailwind", skillIcon: <TailwindIcon />, glowColor: "#00acc1"},
         {skillName: "Bootstrap", skillIcon: <BootstrapIcon />, glowColor: "#6c19ff"},
@@ -27,7 +27,7 @@ export const Skillsec = () => {
                             <li key={index}>
                                 <figure className={styles.imgsec} style={skill.glowColor ? { "--glow-color": skill.glowColor } : {} } title={skill.skillName} aria-label={skill.skillName}>
                                     {skill.skillIcon}
-                                    
+                                    <figcaption className="sr-only">{skill.skillName}</figcaption>
                                 </figure>
                             </li>
                         )
