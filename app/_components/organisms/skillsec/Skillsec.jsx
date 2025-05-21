@@ -5,17 +5,17 @@ import { HtmlIcon, CssIcon, SassIcon, TailwindIcon, BootstrapIcon, JavascriptIco
 export const Skillsec = () => {
 
     const skillList = [
-        {skillName: "Html", skillIcon: <HtmlIcon />},
-        {skillName: "Css", skillIcon: <CssIcon />},
-        {skillName: "Sass", skillIcon: <SassIcon />},
-        {skillName: "Tailwind", skillIcon: <TailwindIcon />},
-        {skillName: "Bootstrap", skillIcon: <BootstrapIcon />},
-        {skillName: "Javascript", skillIcon: <JavascriptIcon />},
-        {skillName: "React", skillIcon: <ReactIcon />},
-        {skillName: "NextJs", skillIcon: <NextjsIcon />},
-        {skillName: "Wordpress", skillIcon: <WordpressIcon />},
-        {skillName: "Photoshop", skillIcon: <PhotoshopIcon />},
-        {skillName: "Figma", skillIcon: <FigmaIcon />},
+        {skillName: "Html", skillIcon: <HtmlIcon />, glowColor: "#ff5c13"},
+        {skillName: "Css", skillIcon: <CssIcon />, glowColor: "#0277bd"},
+        {skillName: "Sass", skillIcon: <SassIcon />, glowColor: "#f06292"},
+        {skillName: "Tailwind", skillIcon: <TailwindIcon />, glowColor: "#00acc1"},
+        {skillName: "Bootstrap", skillIcon: <BootstrapIcon />, glowColor: "#6c19ff"},
+        {skillName: "Javascript", skillIcon: <JavascriptIcon />, glowColor: "#ffd600"},
+        {skillName: "React", skillIcon: <ReactIcon />, glowColor: "#00d6fd"},
+        {skillName: "NextJs", skillIcon: <NextjsIcon />, glowColor: "#938e8e"},
+        {skillName: "Wordpress", skillIcon: <WordpressIcon />, glowColor: "#01579b"},
+        {skillName: "Figma", skillIcon: <FigmaIcon />, glowColor: "#e64a19"},
+        {skillName: "Photoshop", skillIcon: <PhotoshopIcon />, glowColor: "#03a9f4"},
     ]
 
     return (
@@ -25,9 +25,10 @@ export const Skillsec = () => {
                     skillList.map((skill, index) => {
                         return(
                             <li key={index}>
-                                <div className={styles.imgsec}>
+                                <figure className={styles.imgsec} style={skill.glowColor ? { "--glow-color": skill.glowColor } : {} } title={skill.skillName} aria-label={skill.skillName}>
                                     {skill.skillIcon}
-                                </div>
+                                    
+                                </figure>
                             </li>
                         )
                     })
