@@ -1,17 +1,21 @@
 import styles from './skillList.module.scss';
 
-import { HtmlIcon } from "../../atoms/icons/Icons";
+import { HtmlIcon, CssIcon, SassIcon, TailwindIcon, BootstrapIcon, JavascriptIcon, NextjsIcon, WordpressIcon, PhotoshopIcon, FigmaIcon, ReactIcon } from "../../atoms/icons/Icons";
 
 export const SkillList = () => {
 
     const skillList = [
         {skillName: "Html", skillIcon: <HtmlIcon />},
-        {skillName: "Html", skillIcon: <HtmlIcon />},
-        {skillName: "Html", skillIcon: <HtmlIcon />},
-        {skillName: "Html", skillIcon: <HtmlIcon />},
-        {skillName: "Html", skillIcon: <HtmlIcon />},
-        {skillName: "Html", skillIcon: <HtmlIcon />},
-        {skillName: "Html", skillIcon: <HtmlIcon />},
+        {skillName: "Css", skillIcon: <CssIcon />},
+        {skillName: "Sass", skillIcon: <SassIcon />},
+        {skillName: "Tailwind", skillIcon: <TailwindIcon />},
+        {skillName: "Bootstrap", skillIcon: <BootstrapIcon />},
+        {skillName: "Javascript", skillIcon: <JavascriptIcon />},
+        {skillName: "React", skillIcon: <ReactIcon />},
+        {skillName: "NextJs", skillIcon: <NextjsIcon />},
+        {skillName: "Wordpress", skillIcon: <WordpressIcon />},
+        {skillName: "Photoshop", skillIcon: <PhotoshopIcon />},
+        {skillName: "Figma", skillIcon: <FigmaIcon />},
     ]
 
     return (
