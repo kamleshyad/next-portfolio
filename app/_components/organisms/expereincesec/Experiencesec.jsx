@@ -1,6 +1,5 @@
+import { Companysec } from '../../molecules/company/Companysec';
 import styles from './experiencesec.module.scss';
-
-import { Sectiontitle } from "../../molecules/sectiontitle/Sectiontitle";
 
 export const Experiencesec = () => {
     return (
@@ -13,6 +12,7 @@ export const Experiencesec = () => {
                     <p>of working experience as a <span>"Frontend Developer"</span></p>
                 </div>
             </div>
+            <Companysec />
         </div>
     )
 }

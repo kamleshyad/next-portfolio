@@ -1,5 +1,5 @@
 .aboutwrap{@include d-flex(5%, row, wrap); font-size: 0; align-items: center; background: $color-black;
-    .aboutlefttsec{width: 40%; @include d-flex(20px, row, wrap); padding: 40px 30px; background: $color-black; border-radius: 8px; box-shadow: 0px 10px 120px rgba(225,225,225, .2);
+    .aboutlefttsec{width: 40%; @include d-flex(20px, row, wrap); padding: 40px 30px; background: $color-black; border-radius: 12px; box-shadow: 0px 10px 120px rgba(225,225,225, .2);
         ul{@include d-flex(10px, column, wrap); font-size: 0;
             li{@include d-flex(25px, row, wrap); align-items: center;
                 p.title{@include text-style(17px, $color-white, 400, 30px); width: 135px; font-family: $secondary-font; @include rel();
