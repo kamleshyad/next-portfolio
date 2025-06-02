@@ -15,7 +15,9 @@ export const Banner = () => {
                         <h2>Next Js</h2>
                     </div>
                     <div className={styles.bnrrightsec}>
-                        <Image src={bannerImg} alt='Kamlesh Yadav — Frontend Developer portrait image'/>
+                        <figure className={styles.bannerimg}>
+                            <Image src={bannerImg} alt='Kamlesh Yadav — Frontend Developer portrait image'/>
+                        </figure>
                     </div>
                 </div>
             </Container>

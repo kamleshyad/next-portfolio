@@ -1,12 +1,24 @@
 .bannersec{padding: 120px 0 80px; background: url('/images/hero-bg.jpg') no-repeat top center; background-size: cover; border-bottom: 1px solid $color-grey;
     .bnrwrap{
-        @include d-flex(30px, row, wrap); font-size: 0; justify-content: space-between;
+        @include d-flex(30px, row, wrap); font-size: 0; justify-content: space-between; align-items: center;
             .bnrleftsec { width: 48%;
                 h1{@include text-style(60px, $color-white, 500, 60px); font-family: $secondary-font;
                 span{display: block; margin-top: 30px; color: $color-yellow;}
             }
             h2{@include text-style(50px, $color-lightgrey, 500, 60px); font-family: $secondary-font; margin-top: 25px;}
         }
-        .bnrrightsec{width: 48%; display: flex; justify-content: center; align-items: center;}
+        .bnrrightsec{width: 48%; display: flex; justify-content: center; align-items: center;
+        figure.bannerimg{
+            animation-name: bannerimg;
+            animation-direction: alternate;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite; 
+            animation-timing-function: ease-in-out;
+        }
+        @keyframes bannerimg {
+            0%   {transform: translateY(-15px); }
+            100% {transform: translateY(0px); } 
+        }
+        }
     }
 }
