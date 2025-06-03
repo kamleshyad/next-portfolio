@@ -5,6 +5,7 @@ import { Sectiontitle } from '@/app/_components/molecules/sectiontitle/Sectionti
 import { Aboutsec } from '@/app/_components/organisms/aboutsec/Aboutsec';
 import { Experiencesec } from '@/app/_components/organisms/expereincesec/Experiencesec';
 import { Skillsec } from '@/app/_components/organisms/skillsec/Skillsec';
+import { Projectsec } from '@/app/_components/organisms/projectsec/Projectsec';
 
 const Home = () => {
     return(
@@ -25,6 +26,12 @@ const Home = () => {
                 <Container container="lg-">
                     <Sectiontitle title="Skills" id="skill"/>
                     <Skillsec />
+                </Container>
+            </section>
+            <section className={styles.experiencesec} aria-labelledby='Project'>
+                <Container container="lg-">
+                    <Sectiontitle title="Projects" id="Project"/>
+                    <Projectsec />
                 </Container>
             </section>
         </>

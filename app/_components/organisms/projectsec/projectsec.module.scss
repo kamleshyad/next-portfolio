@@ -1,0 +1,6 @@
+.projectsec{
+    ul{@include d-flex(30px, row, wrap); font-size: 0; justify-content: center;
+        li{padding: 50px; flex: 1 0 47%; border: 1px solid $color-grey;
+        }
+    }
+}
