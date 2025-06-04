@@ -2,7 +2,7 @@
     ul{@include d-flex(0, row, wrap);
         li{@include text-style(15px, $color-yellow, 400, 16px); position: relative;
             &:not(:first-child){margin-left: 25px;
-                &::before{content: "\276F"; color: $color-grey; position: absolute; top: 0; left: -16px; font-size: 15px;
+                &::before{content: "\276F"; color: $color-lightgrey; position: absolute; top: 0; left: -16px; font-size: 13px;
                     }
                 }
             a{color: $color-white; transition: all 0.3s linear; letter-spacing: 0.5px;
