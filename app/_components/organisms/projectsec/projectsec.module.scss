@@ -1,6 +1,10 @@
 .projectsec{
     ul{@include d-flex(30px, row, wrap); font-size: 0; justify-content: center;
-        li{padding: 50px; flex: 1 0 47%; border: 1px solid $color-grey;
+        li{flex: 1 0 47%; border: 1px solid $color-grey; border-radius: 8px; overflow: hidden;
+            article{background: $color-blue; padding: 20px;
+                h3{@include text-style(22px, $color-white, 500px, 26px); margin-bottom: 25px;}
+                .projecturl a{display: inline-block; @include text-style(14px, $color-yellow, 400px, 20px);}
+            }
         }
     }
 }
