@@ -2,7 +2,6 @@ import "./_assets/css/globals.scss";
 import { Header } from "./_components/organisms/header/Header";
 import { Footer } from "./_components/organisms/footer/Footer";
 import { Copyright } from "./_components/organisms/copyright/Copyright";
-import { Scrolltotop } from "./_components/molecules/scrolltotop/Scrolltotop";
 
 export const metadata = {
   title: "Kamlesh | Frontend Developer Portfolio",
@@ -18,7 +17,6 @@ export default function RootLayout({ children }) {
       <body>
         <Header />
           <main>
-            <Scrolltotop />
             {children}
           </main>
         <Footer />

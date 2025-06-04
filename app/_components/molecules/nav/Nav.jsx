@@ -5,6 +5,8 @@ import { usePathname } from "next/navigation";
 
 import styles from './nav.module.scss';
 
+import { Navlink } from "../navlink/Navlink";
+
 export const Nav = () => {
 
     const pathname = usePathname();
@@ -25,7 +27,7 @@ export const Nav = () => {
                     navItems.map(({href, label}) => {
                         return(
                             <li key={href}>
-                                <Link href={href} scroll={false} className={pathname === href ? styles.active : ''} aria-current={pathname === href ? 'page' : undefined}>{label}</Link>
+                                <Navlink href={href}>{label}</Navlink>
                             </li>
                         )
                     })
