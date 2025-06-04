@@ -6,7 +6,7 @@ export const Projectsec = () => {
             <ul className="unset">
                 <li>
                     <article>
-
+                        
                     </article>
                 </li>
                 <li>

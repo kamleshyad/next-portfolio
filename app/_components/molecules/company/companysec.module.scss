@@ -1,4 +1,4 @@
-.companysec{width: 55%; padding: 20px; background: $color-black; border-radius: 12px; box-shadow: 0px 10px 120px rgba(225,225,225, .2);
+.companysec{width: 55%; padding: 20px; background: $color-blue; border-radius: 12px;
     ul li{
         h3{@include text-style(14px, $color-yellow, 400, 24px); text-align: center; margin-bottom: 15px;}
         .companywrap{@include d-flex(30px, row, wrap); font-size: 0; 

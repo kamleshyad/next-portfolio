@@ -1,6 +1,6 @@
 import styles from './skillsec.module.scss';
 
-import { HtmlIcon, CssIcon, SassIcon, TailwindIcon, BootstrapIcon, JavascriptIcon, NextjsIcon, WordpressIcon, PhotoshopIcon, FigmaIcon, ReactIcon } from "../../atoms/icons/Icons";
+import { HtmlIcon, CssIcon, SassIcon, TailwindIcon, BootstrapIcon, JavascriptIcon, NextjsIcon, WordpressIcon, PhotoshopIcon, FigmaIcon, ReactIcon, ChatgptIcon } from "../../atoms/icons/Icons";
 
 export const Skillsec = () => {
 
@@ -16,6 +16,7 @@ export const Skillsec = () => {
         {skillName: "Wordpress", skillIcon: <WordpressIcon />, glowColor: "#01579b"},
         {skillName: "Figma", skillIcon: <FigmaIcon />, glowColor: "#e64a19"},
         {skillName: "Photoshop", skillIcon: <PhotoshopIcon />, glowColor: "#03a9f4"},
+        {skillName: "Chatgpt", skillIcon: <ChatgptIcon />, glowColor: "#2ad299"},
     ]
 
     return (

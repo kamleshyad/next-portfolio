@@ -1,4 +1,4 @@
-.skillsec{width: min(800px, 96%); margin: 0 auto; border: 1px solid $color-grey; border-radius: 12px; box-shadow: 0px 10px 120px rgba(225,225,225, .2);
+.skillsec{width: min(800px, 96%); margin: 0 auto; border: 1px solid $color-grey; border-radius: 12px; box-shadow: 0px 10px 60px rgba(225,225,225, .2);
     ul{@include d-flex(25px, row, wrap); font-size: 0; justify-content: center; align-items: center; padding: 30px;
         li{flex: 0 0 100px; 
             .imgsec{padding: 15px; @include d-flex(0, row, wrap); justify-content: center; align-items: center; transition: all 0.3s linear; background: $color-black; border-radius: 12px;
