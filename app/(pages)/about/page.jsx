@@ -8,6 +8,10 @@ export default function About() {
         <section className={styles.aboutsec} aria-labelledby='about-me'>
             <Container container="lg-">
                 <Aboutsec />
+                <Aboutsec />
+                <Aboutsec />
+                <Aboutsec />
+                <Aboutsec />
             </Container>
         </section>
     )
