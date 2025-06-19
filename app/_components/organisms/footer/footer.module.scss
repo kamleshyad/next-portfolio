@@ -1,7 +1,7 @@
-.sitefooter{background: $color-black; padding: 40px 0;
+.sitefooter{padding: 70px 0; background: $color-black; border-top: 1px solid $color-border;
     .contactsec{ @include d-flex(30px, row, wrap); align-items: center; justify-content: center;
-        .contactleft{width: 60%;}
-        .contactright{width: 37%;
+        .contactleft{width: 50%; display: flex; justify-content: center;}
+        .contactright{width: 40%;
         h3{@include text-style(30px, $color-yellow, 500, normal); margin-bottom: 20px;}
         p{@include text-style(16px, $color-lightgrey, 400, 28px);}
 

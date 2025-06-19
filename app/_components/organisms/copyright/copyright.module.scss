@@ -1,4 +1,4 @@
-.copyrightsec{@include border-top(1px, solid, $color-grey); padding: 15px 0; background: $color-black; }
+.copyrightsec{@include border-top(1px, solid, $color-border); padding: 20px 0; background: $color-black; }
 .copyrightsec p{@include text-style(14px, $color-white, 400, normal); text-align: center;
 span{color: $color-yellow;}
 }

@@ -22,13 +22,13 @@ const Home = () => {
                     <Experiencesec />
                 </Container>
             </section>
-            <section className={styles.experiencesec} aria-labelledby='skill'>
+            <section className={styles.skillsec} aria-labelledby='skill'>
                 <Container container="lg-">
                     <Sectiontitle title="Skills" id="skill"/>
                     <Skillsec />
                 </Container>
             </section>
-            <section className={styles.experiencesec} aria-labelledby='Project'>
+            <section className={styles.projectsec} aria-labelledby='Project'>
                 <Container container="lg-">
                     <Sectiontitle title="Projects" id="Project"/>
                     <Projectsec />

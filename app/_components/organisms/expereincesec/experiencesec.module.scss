@@ -1,4 +1,4 @@
-.experiencewrap{@include d-flex(5%, row, wrap); font-size: 0; align-items: center; background: $color-black;
+.experiencewrap{@include d-flex(5%, row, wrap); font-size: 0; align-items: center; background: $color-black; 
     .yearsec{width: 40%; @include d-flex(20px, row, wrap);
         .yearwrap{width: 180px; text-align: center;
             h3{@include text-style(80px, $color-yellow, 700, 60px); }
