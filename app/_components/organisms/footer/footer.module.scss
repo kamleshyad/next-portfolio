@@ -1,3 +1,19 @@
-.sitefooter{background: $color-black;
+.sitefooter{background: $color-black; padding: 40px 0;
+    .contactsec{ @include d-flex(30px, row, wrap); align-items: center; justify-content: center;
+        .contactleft{width: 60%;}
+        .contactright{width: 37%;
+        h3{@include text-style(30px, $color-yellow, 500, normal); margin-bottom: 20px;}
+        p{@include text-style(16px, $color-lightgrey, 400, 28px);}
 
+            .contactbox{@include d-flex(30px, row, wrap); margin-top: 40px;
+                .contactlist{flex: 1 0 100%; @include d-flex(25px, row, wrap);
+                    .icon{font-size: 26px; font-weight: 600; }
+                    .info h4{@include text-style(17px, $color-white, 400, normal); margin-bottom: 5px;}
+                    .info p{@include text-style(14px, $color-yellow, 400, normal);}
+                    .info a{@include text-style(14px, $color-yellow, 400, normal);}
+                }
+        
+            }
+        }
+    }
 }
