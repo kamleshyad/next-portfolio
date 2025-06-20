@@ -1,0 +1,6 @@
+.accordiansec{@include d-flex(30px, row, wrap);
+    .acclist{width: 100%;
+        .title{background: $color-blue; padding: 15px 15px 0 15px;}
+        .content{background: $color-blue; padding: 15px;}
+    }
+}

@@ -32,7 +32,7 @@ const Home = () => {
             <section className={styles.hireme} aria-labelledby='hire-me'>
                 <MainTemplate container="lg-">
                     <Sectiontitle title="Why Hire Me" id="hire-me"/>
-                    <Accordian />
+                    <Accordian width="1024px"/>
                 </MainTemplate>
             </section>
             <section className={styles.projectsec} aria-labelledby='Project'>

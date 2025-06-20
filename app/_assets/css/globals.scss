@@ -4,5 +4,6 @@ body{font-family: $primary-font; font-size: 18px; line-height: normal; font-weig
 .fluid-container{width: min(1920px, 96%); margin: 0 auto;}
 .container{width: min(1290px, 96%); margin: 0 auto;}
 .lg-container{width: min(1180px, 96%); margin: 0 auto;}
+.sm-container{width: min(1024px, 96%); margin: 0 auto;}
 a{text-decoration: none;}
 .unset{margin: 0; padding: 0; list-style: none;}

@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import styles from './page.module.scss';
+import styles from './button.module.scss';
 
 export const PrimaryBtn = ({children}) => {
     return (
