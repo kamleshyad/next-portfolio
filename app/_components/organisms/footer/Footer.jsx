@@ -7,10 +7,11 @@ import { usePathname } from 'next/navigation';
 import styles from './footer.module.scss';
 
 import contactImg from '../../../../public/images/contact-img.png';
+
 import { PhoneIcon } from '../../atoms/icons/Icons';
 import { LocationIcon } from '../../atoms/icons/Icons';
 import { MailIcon } from '../../atoms/icons/Icons';
-import { Container } from "../../template/container/Container";
+import { MainTemplate } from '../../template/MainTemplate';
 import { Sectiontitle } from '../../molecules/sectiontitle/Sectiontitle';
 
 export const Footer = () => {
@@ -19,7 +20,7 @@ export const Footer = () => {
 
     return (
         <footer className={styles.sitefooter}>
-            <Container container="lg-">
+            <MainTemplate container="lg-">
                 {
                     pathName == "/" ? <Sectiontitle id="Contact" title="Get In Touch"/> : ""
                 }
@@ -66,7 +67,7 @@ export const Footer = () => {
                         </div>
                     </div>
                 </div>
-            </Container>
+            </MainTemplate>
         </footer>
     )
 }

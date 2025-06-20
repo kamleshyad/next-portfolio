@@ -1,17 +1,17 @@
 import styles from './innerbanner.module.scss';
 
-import { Container } from "../../template/container/Container";
+import { MainTemplate } from '../../template/MainTemplate';
 import { Breadcrumb } from '../../molecules/breadcrumb/Breadcrumb';
 
 export const Innerbanner = ({pageTitle = ''}) => {
     return (
         <section className={styles.innerbnrsec} aria-labelledby='page-title'>
-            <Container container="lg-">
+            <MainTemplate container="lg-">
                 <Breadcrumb />
                 <div className="innerbnrwrap">
                     <h1 id='page-title'>{pageTitle}</h1>
                 </div>
-            </Container>
+            </MainTemplate>
         </section>
     )
 }

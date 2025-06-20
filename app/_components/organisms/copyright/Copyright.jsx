@@ -1,5 +1,5 @@
 import styles from './copyright.module.scss';
-import { Container } from '../../template/container/Container';
+import { MainTemplate } from '../../template/MainTemplate';
 
 export const Copyright = () => {
     const date = new Date();
@@ -7,9 +7,9 @@ export const Copyright = () => {
 
     return (
         <div className={styles.copyrightsec}>
-            <Container>
+            <MainTemplate>
                 <p>&copy; {year}. Designed by <span>Kamleshyad</span>. All right reserved.</p>
-            </Container>
+            </MainTemplate>
         </div>
     )
 }

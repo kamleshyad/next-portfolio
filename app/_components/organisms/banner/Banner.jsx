@@ -1,14 +1,14 @@
 import Image from 'next/image';
 
 import styles from './banner.module.scss';
-import { Container } from "../../template/container/Container";
+import { MainTemplate } from '../../template/MainTemplate';
 
 import bannerImg from '../../../../public/images/bannerimg.png'
 
 export const Banner = () => {
     return (
         <section className={styles.bannersec} aria-labelledby='page-title'>
-            <Container container="lg-">
+            <MainTemplate container="lg-">
                 <div className={styles.bnrwrap}>
                     <div className={styles.bnrleftsec}>
                         <h1 id='page-title'>I'm Kamlesh Yadav <span>Frontend Developer</span></h1>
@@ -20,7 +20,7 @@ export const Banner = () => {
                         </figure>
                     </div>
                 </div>
-            </Container>
+            </MainTemplate>
         </section>
     )
 }

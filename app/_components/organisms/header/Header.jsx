@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import styles from './header.module.scss';
 
 import { MobileIcon } from "../../atoms/icons/Icons";
-import { Container } from "../../template/container/Container";
+import { MainTemplate } from "../../template/MainTemplate";
 import { Banner } from "../banner/Banner";
 import { Innerbanner } from "../innerbanner/Innerbanner";
 import { Nav } from "../../molecules/nav/Nav";
@@ -30,7 +30,7 @@ export const Header = () => {
     return (
         <>
             <header className={styles.siteheader}>
-                <Container container="fluid-">
+                <MainTemplate container="fluid-">
                     <div className={styles.headersec}>
                         <div className={styles.logo}>
                             <Link href="/" scroll={false}><span>K</span>amlesh.Dev</Link>
@@ -42,7 +42,7 @@ export const Header = () => {
                             </div>
                         </div>
                     </div>
-                </Container>
+                </MainTemplate>
             </header>
             {
                 (pathname === '/') ? <Banner /> : <Innerbanner pageTitle={pageTitle}/>
