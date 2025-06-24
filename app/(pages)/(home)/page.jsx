@@ -29,16 +29,16 @@ const Home = () => {
                     <Skillsec />
                 </MainTemplate>
             </section>
-            <section className={styles.hireme} aria-labelledby='hire-me'>
-                <MainTemplate container="lg-">
-                    <Sectiontitle title="Why Hire Me" id="hire-me"/>
-                    <Accordian width="1024px"/>
-                </MainTemplate>
-            </section>
             <section className={styles.projectsec} aria-labelledby='Project'>
                 <MainTemplate container="lg-">
                     <Sectiontitle title="Projects" id="Project"/>
                     <Projectsec />
+                </MainTemplate>
+            </section>
+            <section className={styles.hireme} aria-labelledby='hire-me'>
+                <MainTemplate container="lg-">
+                    <Sectiontitle title="Why Hire Me" id="hire-me"/>
+                    <Accordian width="1024px"/>
                 </MainTemplate>
             </section>
         </>
