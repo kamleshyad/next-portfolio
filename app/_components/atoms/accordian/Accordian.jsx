@@ -17,7 +17,7 @@ export const Accordian = ({width = '1024px'}) => {
     }
 
     return (
-        <div className={styles.accordiansec} style={{width: `min(${width}, 96%)`, margin: '0 auto'}}>
+        <div className={styles.accordiansec}>
             {
                 FAQDATA.map(( faq ) => {
 
@@ -27,11 +27,11 @@ export const Accordian = ({width = '1024px'}) => {
                         <div className={styles.acclist} key={f_id}>
                             <div className={styles.title} onClick={ ()=> handleToggle(f_id) }>
                                 <h4>{faqQuestion}</h4>
-                                <span className={`${isActive ? styles.rotate: undefined}`}><TriangleShapeIcon /></span>
+                                <span className={`${isActive ? styles.rotate : undefined}`}><TriangleShapeIcon /></span>
                             </div>
                             {
                                 isActive && (
-                                    <div className={`${styles.content} ${isActive ? ` ${styles.active}` : ''}`}>
+                                    <div className={`${styles.content} ${isActive ? styles.active : ''}`}>
                                         <p>{faqAnswer}</p>
                                     </div>
                                 )
