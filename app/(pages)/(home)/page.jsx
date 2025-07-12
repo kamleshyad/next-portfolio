@@ -38,7 +38,9 @@ const Home = () => {
             <section className={styles.hireme} aria-labelledby='hire-me'>
                 <MainTemplate container="lg-">
                     <Sectiontitle title="Why Hire Me" id="hire-me"/>
-                    <Accordian />
+                    <div className="hireaccordian">
+                        <Accordian />
+                    </div>
                 </MainTemplate>
             </section>
         </>

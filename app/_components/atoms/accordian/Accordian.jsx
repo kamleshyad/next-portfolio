@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { TriangleShapeIcon } from '../icons/Icons';
 
 import styles from './accordian.module.scss';
@@ -9,10 +9,18 @@ import { FAQDATA } from '@/app/utils/Constant';
 export const Accordian = ({width = '1024px'}) => {
 
     const [ activeIndex, setActiveIndex ] = useState(0);
+    const [ hasMounted, setHasMounted ] = useState(false);
+    const refs = useRef({});
 
-    const handleToggle = (f_id) => {
+    useEffect(() => {
+        setHasMounted(true);
+    }, [])
+
+    const handleToggle = (id) => {
         return(
-            setActiveIndex(f_id === activeIndex ? null : f_id)
+            setActiveIndex( (preVal) => {
+                return preVal === id ? null : id;
+            })
         )
     }
 
@@ -21,21 +29,18 @@ export const Accordian = ({width = '1024px'}) => {
             {
                 FAQDATA.map(( faq ) => {
 
-                    const {f_id, faqQuestion, faqAnswer} = faq;
-                    const isActive = activeIndex === f_id;
+                    const {id, faqQuestion, faqAnswer} = faq;
+                    const isActive = activeIndex === id;
                     return(
-                        <div className={styles.acclist} key={f_id}>
-                            <div className={styles.title} onClick={ ()=> handleToggle(f_id) }>
-                                <h4>{faqQuestion}</h4>
-                                <span className={`${isActive ? styles.rotate : undefined}`}><TriangleShapeIcon /></span>
+                        <div className={styles.acclist} key={id}>
+                            <button className={styles.accbtn} onClick={ ()=> handleToggle(id) }>
+                                <span className={styles.title}>{faqQuestion}</span>
+                                <span className={`${styles.icon} ${isActive ? styles.rotate : undefined}`}><TriangleShapeIcon /></span>
+                            </button>
+                            <div ref={ (el) => { if(el) refs.current[id] = el} } style={ {maxHeight: isActive && hasMounted ? `${refs.current[id]?.scrollHeight}px` : "0px"} }
+                                className={styles.content}>
+                                <p>{faqAnswer}</p>
                             </div>
-                            {
-                                isActive && (
-                                    <div className={`${styles.content} ${isActive ? styles.active : ''}`}>
-                                        <p>{faqAnswer}</p>
-                                    </div>
-                                )
-                            }
                         </div>
                     )
                 })

@@ -1,16 +1,30 @@
+// .accordiansec{@include d-flex(30px, row, wrap); margin: 0 auto;
+//     .acclist{width: 100%; border-radius: 8px;
+//         .title{background: $color-blue; padding: 12px; @include d-flex(15px, row, nowrap); justify-content: space-between; cursor: pointer; border: 0; 
+//             h4{@include text-style(18px, $color-white, 400, 30px);}
+//             span{width: 30px; height: 30px;
+//                 svg{font-size: 30px; transition: transform 0.5s ease;}
+//             }
+//             .rotate svg { transform: rotate(180deg); }
+//         }
+//         .content{background: $color-blue; overflow: hidden; max-height: 0; opacity: 0; transition: max-height 0.4s ease, opacity 0.4s ease;
+//             p{@include text-style(16px, $color-lightgrey, 400, 28px); border-top: 1px solid $color-border; padding: 12px; }
+            
+//         }
+//         .content.active {max-height: 500px; opacity: 1;}
+//     }
+// }
+
+
 .accordiansec{@include d-flex(30px, row, wrap); margin: 0 auto;
-    .acclist{width: 100%; border-radius: 8px;
-        .title{background: $color-blue; padding: 12px; @include d-flex(15px, row, nowrap); justify-content: space-between;  cursor: pointer;
-            h4{@include text-style(18px, $color-white, 400, 30px);}
-            span{width: 30px; height: 30px;
-                svg{font-size: 30px; transition: transform 0.5s ease;}
-            }
-            .rotate svg { transform: rotate(180deg); }
-        }
-        .content{background: $color-blue; overflow: hidden; max-height: 0; opacity: 0; transition: max-height 0.4s ease, opacity 0.4s ease;
-            p{@include text-style(16px, $color-lightgrey, 400, 28px); border-top: 1px solid $color-border; padding: 12px; }
+    .acclist{width: 100%; border-radius: 8px; @include d-flex(0px, row, wrap);
+        .accbtn{border: 0; @include d-flex(15px, row, wrap); width: 100%; text-align: left; background: $color-blue; padding: 12px; cursor: pointer}
+        .title{@include text-style(18px, $color-white, 400, 30px); width: calc(100% - 45px); display: block;}
+        .icon svg{width: 30px; height: 30px; transition: all 0.3s ease;}
+        .rotate svg { transform: rotate(180deg); }
+        .content{background: $color-blue; overflow: hidden; transition: all 0.3s linear; width: 100%;
+            p{@include text-style(16px, $color-lightgrey, 400, 28px); padding: 12px 18px; border-top: 1px solid $color-border; transition: all 0.3s linear;}
             
         }
-        .content.active {max-height: 500px; opacity: 1;}
     }
 }
