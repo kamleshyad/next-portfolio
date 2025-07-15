@@ -1,12 +1,44 @@
 @use 'variables' as *;
 
-@mixin d-flex($gap, $direction, $wrap) {display: flex; gap: $gap; flex-flow: $direction $wrap;}
+@mixin d-flex($gap, $direction, $wrap) {
+    display: flex; 
+    gap: $gap; 
+    flex-flow: $direction $wrap;
+}
 
-@mixin text-style($size, $color, $weight, $lineHeight) {font-size: $size; color: $color; font-weight: $weight; line-height: $lineHeight;}
+@mixin text-style($size, $color, $weight, $lineHeight) {
+    font-size: $size; 
+    color: $color; 
+    font-weight: $weight; 
+    line-height: $lineHeight;}
 
-@mixin border-top($width, $style, $color) {border-top: $width $style $color;}
+@mixin border-top($width, $style, $color) {
+    border-top: $width $style $color;
+}
 
-@mixin rel(){position: relative;}
+@mixin rel(){
+    position: relative;
+}
 
-@mixin absolute(){position: absolute;}
+@mixin absolute(){
+    position: absolute;
+}
 
+@mixin padding( $top, $right : $top, $bottom : $top, $left: $right){
+    padding: $top $right $bottom $left;;
+}
+
+@mixin p-left( $val ) {
+    padding-left: $val;
+}
+
+@mixin box-shadow-yellow {
+    box-shadow: 0px 0px 3px rgb(254 197 68);
+}
+
+@mixin sticky( $z-index, $top: 0 ) {
+    position: sticky;
+    top: $top; 
+    width: 100%;
+    z-index: $z-index;
+}

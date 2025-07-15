@@ -7,6 +7,7 @@ const nextConfig = {
       @use 'variables' as *;
       @use 'mixins' as *;
       @use 'fontfaces' as *;
+      @use 'extends' as *;
     `,
   },
 };
