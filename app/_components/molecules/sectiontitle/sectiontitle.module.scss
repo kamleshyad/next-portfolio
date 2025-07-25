@@ -1,6 +1,6 @@
 .titlesec{@include rel();
     h2{@include rel(); @include text-style(90px, $color-grey, 700, 70px); text-transform: uppercase; letter-spacing: 10px; text-align: center; z-index: 1; font-family: $secondary-font; margin-bottom: 80px;}
-    p{@include absolute(); @include text-style(24px, $color-yellow, 500, normal); text-transform: uppercase; top: 50%; left: 50%; transform: translate(-50%, -65%); z-index: 2; letter-spacing: 1px; text-align: center; font-family: $secondary-font;
+    p{@include absolute(); @include text-style(24px, $color-yellow, 500, normal); text-transform: uppercase; top: 50%; left: 50%; transform: translate(-50%, -65%); z-index: 2; letter-spacing: 1px; text-align: center; font-family: $secondary-font; @include gradient-text();
         &::before{content: ''; position: absolute; bottom: -5px; left: 50%; transform: translateX(-50%); width: 180px; height: 2px; background: $color-grey;}
-        &::after{content: ''; position: absolute; bottom: -5px; left: 50%; transform: translateX(-50%); width: 80px; height: 2px; background: $color-yellow;}}
+        &::after{content: ''; position: absolute; bottom: -5px; left: 50%; transform: translateX(-50%); width: 80px; height: 2px; background: $gradient;}}
 }

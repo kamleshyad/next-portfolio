@@ -42,3 +42,9 @@
     width: 100%;
     z-index: $z-index;
 }
+
+@mixin gradient-text() {
+    background: $gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

@@ -3,7 +3,7 @@
         @include d-flex(30px, row, wrap); font-size: 0; justify-content: space-between; align-items: center;
             .bnrleftsec { width: 48%;
                 h1{@include text-style(60px, $color-white, 500, 60px); font-family: $secondary-font;
-                span{display: block; margin-top: 30px; color: $color-yellow;}
+                span{display: block; margin-top: 30px; color: $color-yellow; @include gradient-text();}
             }
             h2{@include text-style(50px, $color-lightgrey, 500, 60px); font-family: $secondary-font; margin-top: 25px;}
         }
