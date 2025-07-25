@@ -1,7 +1,9 @@
-import React from 'react'
+import { Sitecontent } from '@/app/_components/template/sitecontent/Sitecontent'
 
 export default function Projects() {
     return (
-        <h2>Projects</h2>
+        <Sitecontent>
+
+        </Sitecontent>
     )
 }

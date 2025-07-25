@@ -1,7 +1,7 @@
 .siteheader{ @include padding(15px, 0); @include box-shadow-yellow; @include sticky(100); background: $color-black;}
 .headersec{@include d-flex(20px, row, wrap); @extend %center-between;}
-    .logo a{@include text-style(36px, $color-white, 400, 44px); @include p-left(45px); display: inline-block; font-family: $secondary-font; position: relative; 
+    .logo a{@include text-style(28px, $color-white, 600, 40px); @include p-left(40px); display: inline-block; font-family: $secondary-font; position: relative; @include gradient-text();
     span{color: $color-yellow;}
-    &::before{content: ''; position: absolute; top: calc(50% - 24px); left: 0; background: url('/images/logo-icon.png') no-repeat center; background-size: 100%; width: 34px; height: 49px;}
+    &::before{content: ''; position: absolute; top: calc(50% - 20px); left: 0; background: url('/images/logo-icon.png') no-repeat center; background-size: 100%; width: 27px; height: 40px;}
 }
 .headerright{@include d-flex(60px, row, wrap); @extend %items-center;}

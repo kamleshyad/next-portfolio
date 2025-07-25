@@ -33,7 +33,7 @@ export const Header = () => {
                 <MainTemplate container="fluid-">
                     <div className={styles.headersec}>
                         <div className={styles.logo}>
-                            <Link href="/" scroll={false}><span>K</span>amlesh.Dev</Link>
+                            <Link href="/" scroll={false}>Kamlesh.Dev</Link>
                         </div>
                         <div className={styles.headerright}>
                             <Nav />
