@@ -29,12 +29,12 @@ const Home = () => {
                     <Skillsec />
                 </MainTemplate>
             </section>
-            <section className={styles.projectsec} aria-labelledby='Project'>
+            {/* <section className={styles.projectsec} aria-labelledby='Project'>
                 <MainTemplate container="lg-">
                     <Sectiontitle title="Projects" id="Project"/>
                     <Projectsec />
                 </MainTemplate>
-            </section>
+            </section> */}
             <section className={styles.hireme} aria-labelledby='hire-me'>
                 <MainTemplate container="lg-">
                     <Sectiontitle title="Why Hire Me" id="hire-me"/>
